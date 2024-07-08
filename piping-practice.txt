@@ -1,0 +1,14 @@
+/dev/null - If you don't want the output to be seen then we can use this generally
+Creating STR variable STR=$'put the value' then echoing it. echo "$STR" Be careful with "" double quotes
+STR=$'1. This is a new line\n 2. This is a new line'  V.IMP While creating a variable in this way never put spaces after variable and the value STR = $ ''(Wrong); STR=$'' (Right)
+ Chaining commands using && It only executes if the first command is true
+ Now appending to the file  echo "Your text" >> existing_file.text
+
+ Suppressing errors:
+ ls -l /wrongpath 2> /dev/null ; The error path doesn't exists wouldn't be shown
+
+ head and tail commands 
+ head -n /var/log/dpkg.log
+head -n 2 filename - shows forst 2 lines of the file, likewise for tail too but from the end
+!! - runs the latest command
+!(number in history) - runs that particular command
